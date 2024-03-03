@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="title" content="Nenzadex - Pokedex Pokémon">
+    <meta name="description" content="Pokedex from fan to fan, all Pokémon in one site! see here information of status, evolutions, images, descriptions and mutch more">
+    <meta name="keywords" content="evolution, pokedex, pokemon, types of pokemon, pokemon description, pokemon descrições, pokemons tipos, pokeapi, pokeapi exemplo html, pokeapi exemplo javascript, pokeapi exemplo ajax">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="2 days">
+    <meta name="author" content="Pedro Tomaz Rezende Fagundes, pedrotomazdev">
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>NenzaDex</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/main.css">
+    </noscript>
+</head>
+
+<body class="no-scroll" id="firstElement">
+
+    <div class="load">
+        <video loop autoplay muted>
+            <source src="img/load_1.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div id="overlay">
+    </div>
+
+    <header class="nenza-header">
+        <h1>Nenzadex - The best Pokedex of the web - See all pokemons, stats, types, and much more!</h1>
+        <div class="container-fluid">
+            <div class="content-header">
+                <div class="col-md-12 col-sm-12">
+                    <div class="campo-busca">
+                        <p>Number or Name</p>
+                        <label for="searchKey">
+                            <input type="text" placeholder="Search for the pokemon you want!" id="searchKey">
+                            <button id="startSearch">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <div id="failedToLoad">
+
+        </div>
+        <div class="container">
+            <div id="all_poke">
+                <div id="preload">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 ">
+                        <div class="pokemons-card">
+                            <div class="poke-type">
+                            </div>
+                            <div class="poke-icon">
+                            </div>
+                            <div class="poke-img">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="windowPoke">
+            <div class="close-window">
+                <i class="fas fa-backspace"></i>
+            </div>
+            <div id="infoPoke">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/main-dist.js"></script>
+
+</body>
+
+</html>
